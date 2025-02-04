@@ -1,0 +1,23 @@
+input_str = input("Enter here: ")
+
+vowels = 0
+consonants = 0
+spaces = 0
+others = 0
+
+vowel_chars = "aAeEiIoOuU"
+
+for char in input_str:
+    if char in vowel_chars:
+        vowels += 1
+    elif char.isalpha():
+        consonants += 1
+    elif char.isspace():
+        spaces += 1
+    else:
+        others += 1
+
+print("Vowels: ", vowels)
+print("Consonants:", consonants)
+print("Spaces:", spaces)
+print("Other characters:", others)
