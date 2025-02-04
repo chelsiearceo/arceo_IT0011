@@ -1,15 +1,14 @@
-<<<<<<< HEAD
-input_str = input("Enter here: ")
+user_input = input("Enter here: ")
 
 vowels = 0
 consonants = 0
 spaces = 0
 others = 0
 
-vowel_chars = "aAeEiIoOuU"
+vows = "aAeEiIoOuU"
 
-for char in input_str:
-    if char in vowel_chars:
+for char in user_input:
+    if char in vows:
         vowels += 1
     elif char.isalpha():
         consonants += 1
@@ -17,11 +16,10 @@ for char in input_str:
         spaces += 1
     else:
         others += 1
-
+print("-------------------------------------------")
+print("Thanks for your input, here are the results!")
+print(" ")
 print("Vowels: ", vowels)
 print("Consonants:", consonants)
 print("Spaces:", spaces)
 print("Other characters:", others)
-=======
-
->>>>>>> 6fd791533394e0262376045daec71fdf5af9c626

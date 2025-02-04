@@ -1,8 +1,10 @@
-input_str = input("Enter here: ")
+user_input = input("Enter here: ")
 sum = 0
 
-for char in input_str:
+for char in user_input:
     if char.isdigit():
         sum += int(char)
-
+print("-------------------------------------------")
+print("Thanks for your input, here are the results!")
+print(" ")
 print("Sum of digits:", sum)
