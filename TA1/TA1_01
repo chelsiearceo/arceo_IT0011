@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 input_str = input("Enter here: ")
 
 vowels = 0
@@ -21,3 +22,6 @@ print("Vowels: ", vowels)
 print("Consonants:", consonants)
 print("Spaces:", spaces)
 print("Other characters:", others)
+=======
+
+>>>>>>> 6fd791533394e0262376045daec71fdf5af9c626
