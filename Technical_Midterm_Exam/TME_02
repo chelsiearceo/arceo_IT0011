@@ -1,0 +1,11 @@
+from datetime import datetime
+
+def format_date(date_str):
+    try:
+        date = datetime.strptime(date_str, "%m/%d/%Y")
+        return date.strftime("%B %d, %Y")
+    except ValueError:
+        return "Invalid date format. Please follow mm/dd/yyyy."
+
+input = input("Enter the date (mm/dd/yyyy): ")
+print("Date Output:", format_date(input))

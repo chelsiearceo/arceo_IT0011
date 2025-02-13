@@ -1,0 +1,20 @@
+import os
+
+folder_path = "Technical_Midterm_Exam"  
+file_path = os.path.join(folder_path, "numbers.txt")  
+
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+
+def process_file(filename):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+    
+    for i, line in enumerate(lines, start=1):
+        num = list(map(int, line.strip().split(',')))  
+        total = sum(num)  
+        
+        output = "Palindrome" if is_palindrome(total) else "Not a palindrome"
+        print(f"Line {i}: {', '.join(map(str, num))} - [SUM {total}] - {output}")
+
+process_file(file_path)
